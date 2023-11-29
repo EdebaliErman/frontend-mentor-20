@@ -1,16 +1,18 @@
+import { useState } from 'react';
 import Cards from './Components/Cards/Cards';
 import ComplatedCard from './Components/ComplatedCard/ComplatedCard';
-import { FormState } from './Hook/Hooks';
 import './Style/App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const { status } = FormState()
-                console.log(status)
-
+  const [mail, setMail] = useState()
   return (
-    <div className="App">
-      {status === false ? <Cards /> : <ComplatedCard />}
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Cards setMail={setMail}  />} />
+        <Route path='/complated' element={<ComplatedCard mail={mail} />} />
+      </Routes>
+    </Router>
   );
 }
 

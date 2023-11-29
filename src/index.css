@@ -4,9 +4,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@layer base{
-  html,body{
-    @apply w-full h-full bg-DarkSlateGrey 
-    flex justify-center items-center font-roboto
+@layer base {
+
+  html,
+  body {
+    @apply w-full h-full bg-DarkSlateGrey flex justify-center items-center font-roboto
+  }
+
+  .Complated {
+    @apply bg-white w-[400px] shadow-2xl p-12 rounded-3xl flex flex-col gap-4
+  }
+
+  .Complated h1 {
+    @apply text-6xl font-roboto font-bold text-DarkSlateGrey
+  }
+
+  .Complated img {
+    @apply w-1/6
+  }
+
+  .Complated button {
+    @apply w-full bg-DarkSlateGrey py-2 rounded-xl text-white font-bold font-roboto
+  }
+
+  .Complated p {
+    @apply text-lg text-left p-4
+  }
+
+  .Complated span {
+    @apply text-DarkSlateGrey font-extrabold
   }
 }

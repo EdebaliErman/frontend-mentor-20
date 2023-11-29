@@ -3,10 +3,10 @@ import CardForm from '../CardForm/CardForm'
 import "../../Style/Card.css"
 const url = process.env.PUBLIC_URL + "./assets/"
 
-function Cards() {
+function Cards({setMail}) {
   return (
     <div className='Card' >
-      <CardForm />
+      <CardForm setMail={setMail}/>
       <img src={url + "illustration-sign-up-desktop.svg"} alt='desktop.svg' />
     </div>
   )
