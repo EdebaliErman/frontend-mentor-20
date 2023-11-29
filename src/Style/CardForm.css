@@ -22,7 +22,7 @@
         @apply w-full border-2 p-3 rounded-xl
     }
     form button{
-        @apply bg-DarkSlateGrey text-white my-8 py-3 w-full rounded-xl font-bold text-base
+        @apply bg-DarkSlateGrey text-white my-8 py-6 w-full rounded-xl font-bold text-base hover:bg-gradient-to-l hover:to-pink-600 hover:from-Tomato shadow-2xl shadow-gray-500
     }
     form .error{
         @apply border-Tomato text-Tomato text-xl placeholder:text-Tomato bg-red-100 focus:outline-none focus:ring-0 focus:border-Tomato

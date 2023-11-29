@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components {
+    .Complated {
+        @apply bg-white w-[500px] shadow-2xl p-12 rounded-3xl flex flex-col gap-4
+    }
+
+    .Complated h1 {
+        @apply text-6xl font-roboto font-bold text-DarkSlateGrey
+    }
+
+    .Complated img {
+        @apply w-1/6
+    }
+
+    .Complated button {
+        @apply w-full bg-DarkSlateGrey py-4 rounded-xl text-white font-bold font-roboto hover:bg-gradient-to-l hover:to-pink-600 hover:from-Tomato shadow-2xl shadow-gray-500
+    }
+
+    .Complated p {
+        @apply text-lg text-left p-4
+    }
+
+    .Complated span {
+        @apply text-DarkSlateGrey font-extrabold
+    }
+}

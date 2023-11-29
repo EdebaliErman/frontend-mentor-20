@@ -1,14 +1,13 @@
 import React from 'react'
-
-function ComplatedCard({ mail }) {
-    console.log(mail)
+import "../../Style/Complated.css"
+function ComplatedCard({mail,handleSubmit}) {
     return (
         <div className='Complated' >
             <img src={process.env.PUBLIC_URL + "./assets/icon-success.svg"} alt='svg' />
             <h1>Thanks for subscribing!</h1>
-            <p>A confirmation email has been sent to <span>{mail} mail</span>. Please open it and click the button inside to confirm your subscription.
+            <p>A confirmation email has been sent to <span> {mail}</span>. Please open it and click the button inside to confirm your subscription.
             </p>
-            <button>Dismiss message</button>
+            <button onClick={handleSubmit}>Dismiss message</button>
         </div>
     )
 }
