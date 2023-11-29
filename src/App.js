@@ -8,18 +8,21 @@ function App() {
   const [error, setError] = useState(null)
   const [status, setStatus] = useState(false)
   const isValidMail = email => { return /\S+@\S+\.\S+/.test(email) }
-console.log(status)
+
+
   const handleSubmit = (e) => {
     const disStatus = !status
     e.preventDefault()
     setMail(mail)
-    setStatus(disStatus)
+    mail.length > 3 && setStatus(disStatus)
   }
   const handleChange = (e) => {
     const value = e.target.value
     isValidMail(value)
-    if (!isValidMail(value)) {
-      setError("Valid email required")
+    if (!isValidMail(value) ) {
+      if (mail.length < 3) {
+        setError("Valid email required")
+      }
     } else {
       setError('')
     }
