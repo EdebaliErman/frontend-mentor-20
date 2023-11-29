@@ -5,7 +5,7 @@ function Form({handleChange,handleSubmit,error}) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>Email adress <span className='errorText'> {error}</span> </label>
+            <label>Email address <span className='errorText'> {error}</span> </label>
             <input
                 className={error && 'error'}
                 type='text'

@@ -13,7 +13,7 @@
     }
 
     .CardForm ul li {
-        @apply flex gap-4
+        @apply flex gap-4 my-3
     }
 
     .CardForm h4 {
@@ -30,7 +30,7 @@
         @apply border-Tomato text-Tomato text-xl placeholder:text-Tomato bg-red-100 focus:outline-none focus:ring-0 focus:border-Tomato
     }
     form label{
-        @apply w-full flex justify-between items-start gap-4
+        @apply w-full flex justify-between items-start gap-4 font-bold text-base my-2
     }
     label .errorText{
         @apply text-sm text-red-500 font-bold
