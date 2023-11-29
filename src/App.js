@@ -27,7 +27,7 @@ console.log(status)
   }
 
   return (
-    <div>
+    <div className='App'>
       {!status ?
         <Cards
           error={error}

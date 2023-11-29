@@ -4,10 +4,12 @@
 
     .CardForm {
         @apply w-1/2 flex justify-start items-start flex-col gap-4
+        md:w-full md:h-full md:p-3 md:justify-center
     }
 
     .CardForm h1 {
         @apply text-7xl text-DarkSlateGrey font-extrabold my-4
+        md:text-2xl
     }
 
     .CardForm ul li {
@@ -15,7 +17,7 @@
     }
 
     .CardForm h4 {
-        @apply text-xl
+        @apply text-xl md:text-lg md:my-3 md:font-medium
     }
 
     form input {
