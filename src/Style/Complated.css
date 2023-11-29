@@ -3,10 +3,12 @@
 @layer components {
     .Complated {
         @apply bg-white w-[500px] shadow-2xl p-12 rounded-3xl flex flex-col gap-4
+        md:w-full md:shadow-none md:h-full  md:p-8 md:pt-32
     }
 
     .Complated h1 {
         @apply text-6xl font-roboto font-bold text-DarkSlateGrey
+        md:text-4xl 
     }
 
     .Complated img {
@@ -15,10 +17,11 @@
 
     .Complated button {
         @apply w-full bg-DarkSlateGrey py-4 rounded-xl text-white font-bold font-roboto hover:bg-gradient-to-l hover:to-pink-600 hover:from-Tomato shadow-2xl shadow-gray-500
+        md:mt-44
     }
 
     .Complated p {
-        @apply text-lg text-left p-4
+        @apply text-lg text-left p-4 md:p-0 md:text-base
     }
 
     .Complated span {
