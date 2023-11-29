@@ -1,0 +1,36 @@
+@tailwind components;
+
+@layer components {
+
+    .CardForm {
+        @apply w-1/2 flex justify-start items-start flex-col gap-4
+    }
+
+    .CardForm h1 {
+        @apply text-7xl text-DarkSlateGrey font-extrabold my-4
+    }
+
+    .CardForm ul li {
+        @apply flex gap-4
+    }
+
+    .CardForm h4 {
+        @apply text-xl
+    }
+
+    form input {
+        @apply w-full border-2 p-3 rounded-xl
+    }
+    form button{
+        @apply bg-DarkSlateGrey text-white my-8 py-3 w-full rounded-xl font-bold text-base
+    }
+    form .error{
+        @apply border-Tomato text-Tomato text-xl placeholder:text-Tomato bg-red-100 focus:outline-none focus:ring-0 focus:border-Tomato
+    }
+    form label{
+        @apply w-full flex justify-between items-start gap-4
+    }
+    label .errorText{
+        @apply text-sm text-red-500 font-bold
+    }
+}

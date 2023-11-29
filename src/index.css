@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@layer base{
+  html,body{
+    @apply w-full h-full bg-DarkSlateGrey 
+    flex justify-center items-center font-roboto
+  }
+}
