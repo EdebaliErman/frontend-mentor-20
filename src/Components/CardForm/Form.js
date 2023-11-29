@@ -2,13 +2,9 @@ import React from 'react'
 import { FormState } from '../../Hook/Hooks'
 
 function Form() {
-    const {  handleChange, error, mail,status } = FormState()
+    const { handleSubmit, handleChange, error, mail, status } = FormState()
 
-    const handleSubmit = (e)=>{
-         e.preventDefault()
-       
-         
-    }
+  
 
     return (
         <form id='#form' onSubmit={handleSubmit}>
