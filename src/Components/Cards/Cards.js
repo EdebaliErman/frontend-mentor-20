@@ -7,8 +7,8 @@ function Cards({handleChange,handleSubmit,error}) {
   return (
     <div className='Card' >
       <CardForm error={error} handleChange={handleChange} handleSubmit={handleSubmit} />
-      <img className=' xl:hidden lg:hidden 2xl:hidden' src={url + "illustration-sign-up-mobile.svg"} alt='mobile.svg' />
-      <img className='' src={url + "illustration-sign-up-desktop.svg"} alt='desktop.svg' />
+      <img className=' w-[420px]  sm:hidden md:hidden' src={url + "illustration-sign-up-desktop.svg"} alt='desktop.svg' />
+      <img className='w-full hidden sm:flex md:flex' src={url + "illustration-sign-up-mobile.svg"} alt='mobile.svg' />
     </div>
   )
 }
