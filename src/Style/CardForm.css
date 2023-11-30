@@ -4,7 +4,7 @@
 
     .CardForm {
         @apply w-1/2 flex justify-start items-start flex-col gap-4
-        md:w-full md:h-full md:p-3 md:justify-center md:gap-1
+        md:w-full md:h-full md:p-3 md:justify-center
     }
 
     .CardForm h1 {
@@ -13,11 +13,11 @@
     }
 
     .CardForm ul li {
-        @apply flex gap-4 
+        @apply flex gap-4 my-3
     }
 
     .CardForm h4 {
-        @apply text-xl md:text-xl md:my-3 md:font-medium
+        @apply text-xl md:text-lg md:my-3 md:font-medium
     }
 
     form input {
@@ -30,7 +30,7 @@
         @apply border-Tomato text-Tomato text-xl placeholder:text-Tomato bg-red-100 focus:outline-none focus:ring-0 focus:border-Tomato
     }
     form label{
-        @apply w-full flex justify-between items-start gap-4 font-bold text-base my-2
+        @apply w-full flex justify-between items-start gap-4 font-bold text-sm my-2
     }
     label .errorText{
         @apply text-sm text-red-500 font-bold
