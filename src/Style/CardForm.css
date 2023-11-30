@@ -13,7 +13,7 @@
     }
 
     .CardForm ul li {
-        @apply flex gap-4 my-3
+        @apply flex gap-4 
     }
 
     .CardForm h4 {
