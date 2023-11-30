@@ -2,7 +2,8 @@
 
 @layer components {
     .Card {
-        @apply flex justify-center items-center bg-white p-8 text-left gap-12 rounded-3xl shadow-2xl font-medium text-DarkSlateGrey text-lg w-full md:gap-0 md:justify-center md:items-center md:p-0 md:shadow-transparent md:flex-col-reverse
+        @apply flex justify-center items-center bg-white p-8 text-left gap-12 rounded-3xl shadow-2xl font-medium text-DarkSlateGrey text-lg w-full 
+        md:gap-0 md:justify-center md:items-center md:p-0 md:shadow-transparent md:flex-col-reverse
     }
 
 }

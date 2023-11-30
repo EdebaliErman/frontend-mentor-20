@@ -4,7 +4,7 @@
 
     .CardForm {
         @apply w-1/2 flex justify-start items-start flex-col gap-4
-        md:w-full md:h-full md:p-3 md:justify-center
+        md:w-full md:h-full md:p-3 md:justify-center md:gap-1
     }
 
     .CardForm h1 {
