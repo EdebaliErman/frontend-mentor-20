@@ -17,7 +17,7 @@
     }
 
     .CardForm h4 {
-        @apply text-xl md:text-lg md:my-3 md:font-medium
+        @apply text-xl md:text-xl md:my-3 md:font-medium
     }
 
     form input {
