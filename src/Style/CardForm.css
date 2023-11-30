@@ -9,7 +9,7 @@
 
     .CardForm h1 {
         @apply text-7xl text-DarkSlateGrey font-extrabold my-4
-        md:text-4xl
+        md:text-5xl
     }
 
     .CardForm ul li {
